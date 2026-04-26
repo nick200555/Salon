@@ -1,0 +1,253 @@
+{
+ "actions": [],
+ "creation": "2026-04-26 20:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "portal_enabled",
+  "portal_url",
+  "allow_appointment_booking",
+  "allow_appointment_cancellation",
+  "cancellation_cutoff_hours",
+  "allow_rescheduling",
+  "allow_attachment_upload",
+  "allowed_categories",
+  "sb_visibility",
+  "show_membership_status",
+  "show_loyalty_points",
+  "show_wallet_balance",
+  "show_invoices",
+  "sb_notifications",
+  "whatsapp_notify",
+  "whatsapp_api_provider",
+  "whatsapp_api_key",
+  "email_notify",
+  "email_notify_template",
+  "sms_notify",
+  "sms_gateway_provider",
+  "sms_api_key",
+  "sb_contact",
+  "support_email",
+  "support_phone",
+  "office_hours",
+  "portal_logo",
+  "welcome_message",
+  "footer_links",
+  "customer_auth_method",
+  "session_timeout_mins",
+  "enable_staff_rating",
+  "enable_referral_system"
+ ],
+ "fields": [
+  {
+   "default": "1",
+   "fieldname": "portal_enabled",
+   "fieldtype": "Check",
+   "label": "Portal Enabled"
+  },
+  {
+   "fieldname": "portal_url",
+   "fieldtype": "Data",
+   "label": "Portal URL"
+  },
+  {
+   "default": "1",
+   "fieldname": "allow_appointment_booking",
+   "fieldtype": "Check",
+   "label": "Allow Appointment Booking"
+  },
+  {
+   "default": "1",
+   "fieldname": "allow_appointment_cancellation",
+   "fieldtype": "Check",
+   "label": "Allow Appointment Cancellation"
+  },
+  {
+   "fieldname": "cancellation_cutoff_hours",
+   "fieldtype": "Int",
+   "label": "Cancellation Cutoff (Hours)"
+  },
+  {
+   "default": "1",
+   "fieldname": "allow_rescheduling",
+   "fieldtype": "Check",
+   "label": "Allow Rescheduling"
+  },
+  {
+   "fieldname": "allow_attachment_upload",
+   "fieldtype": "Check",
+   "label": "Allow Attachment Upload"
+  },
+  {
+   "fieldname": "allowed_categories",
+   "fieldtype": "Table MultiSelect",
+   "label": "Allowed Categories",
+   "options": "Service Category"
+  },
+  {
+   "fieldname": "sb_visibility",
+   "fieldtype": "Section Break",
+   "label": "Visibility"
+  },
+  {
+   "default": "1",
+   "fieldname": "show_membership_status",
+   "fieldtype": "Check",
+   "label": "Show Membership Status"
+  },
+  {
+   "default": "1",
+   "fieldname": "show_loyalty_points",
+   "fieldtype": "Check",
+   "label": "Show Loyalty Points"
+  },
+  {
+   "default": "1",
+   "fieldname": "show_wallet_balance",
+   "fieldtype": "Check",
+   "label": "Show Wallet Balance"
+  },
+  {
+   "default": "1",
+   "fieldname": "show_invoices",
+   "fieldtype": "Check",
+   "label": "Show Invoices"
+  },
+  {
+   "fieldname": "sb_notifications",
+   "fieldtype": "Section Break",
+   "label": "Notifications"
+  },
+  {
+   "default": "1",
+   "fieldname": "whatsapp_notify",
+   "fieldtype": "Check",
+   "label": "WhatsApp Notify"
+  },
+  {
+   "fieldname": "whatsapp_api_provider",
+   "fieldtype": "Select",
+   "label": "WhatsApp API Provider",
+   "options": "Interakt\nWati\nAiSensy\nGupshup\nCustom"
+  },
+  {
+   "fieldname": "whatsapp_api_key",
+   "fieldtype": "Password",
+   "label": "WhatsApp API Key"
+  },
+  {
+   "default": "1",
+   "fieldname": "email_notify",
+   "fieldtype": "Check",
+   "label": "Email Notify"
+  },
+  {
+   "fieldname": "email_notify_template",
+   "fieldtype": "Link",
+   "label": "Email Notify Template",
+   "options": "Email Template"
+  },
+  {
+   "fieldname": "sms_notify",
+   "fieldtype": "Check",
+   "label": "SMS Notify"
+  },
+  {
+   "fieldname": "sms_gateway_provider",
+   "fieldtype": "Select",
+   "label": "SMS Gateway Provider",
+   "options": "Twilio\nMSG91\nFast2SMS\nCustom"
+  },
+  {
+   "fieldname": "sms_api_key",
+   "fieldtype": "Password",
+   "label": "SMS API Key"
+  },
+  {
+   "fieldname": "sb_contact",
+   "fieldtype": "Section Break",
+   "label": "Contact Info"
+  },
+  {
+   "fieldname": "support_email",
+   "fieldtype": "Data",
+   "label": "Support Email"
+  },
+  {
+   "fieldname": "support_phone",
+   "fieldtype": "Data",
+   "label": "Support Phone"
+  },
+  {
+   "fieldname": "office_hours",
+   "fieldtype": "Data",
+   "label": "Office Hours"
+  },
+  {
+   "fieldname": "portal_logo",
+   "fieldtype": "Attach",
+   "label": "Portal Logo"
+  },
+  {
+   "fieldname": "welcome_message",
+   "fieldtype": "Text",
+   "label": "Welcome Message"
+  },
+  {
+   "fieldname": "footer_links",
+   "fieldtype": "Table",
+   "label": "Footer Links",
+   "options": "Portal Footer Link"
+  },
+  {
+   "fieldname": "customer_auth_method",
+   "fieldtype": "Select",
+   "label": "Customer Auth Method",
+   "options": "OTP via Mobile\nEmail OTP\nPassword\nBoth"
+  },
+  {
+   "default": "30",
+   "fieldname": "session_timeout_mins",
+   "fieldtype": "Int",
+   "label": "Session Timeout (Mins)"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_staff_rating",
+   "fieldtype": "Check",
+   "label": "Enable Staff Rating"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_referral_system",
+   "fieldtype": "Check",
+   "label": "Enable Referral System"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-04-26 20:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Customer Portal",
+ "name": "Customer Portal Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

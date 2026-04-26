@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "autoname": "plan_name",
+ "creation": "2026-04-26 20:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plan_name",
+  "plan_type",
+  "price",
+  "validity_days",
+  "included_services_sb",
+  "included_services",
+  "service_limit",
+  "sb_benefits",
+  "loyalty_multiplier",
+  "wallet_topup",
+  "birthday_bonus_points",
+  "referral_bonus_points",
+  "referral_bonus_new_customer",
+  "discount_pct_on_products",
+  "discount_pct_on_services",
+  "sb_renewal",
+  "auto_renewal",
+  "renewal_reminder_days",
+  "is_active",
+  "terms_and_conditions",
+  "photo"
+ ],
+ "fields": [
+  {
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "label": "Plan Name",
+   "unique": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "plan_type",
+   "fieldtype": "Select",
+   "label": "Plan Type",
+   "options": "Monthly Subscription\nAnnual Subscription\nService Package\nPrepaid Wallet",
+   "reqd": 1
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "validity_days",
+   "fieldtype": "Int",
+   "label": "Validity (Days)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "included_services_sb",
+   "fieldtype": "Section Break",
+   "label": "Inclusions"
+  },
+  {
+   "fieldname": "included_services",
+   "fieldtype": "Table",
+   "label": "Included Services",
+   "options": "Plan Service Inclusion"
+  },
+  {
+   "fieldname": "service_limit",
+   "fieldtype": "Int",
+   "label": "Service Limit (0 = Unlimited)"
+  },
+  {
+   "fieldname": "sb_benefits",
+   "fieldtype": "Section Break",
+   "label": "Benefits"
+  },
+  {
+   "fieldname": "loyalty_multiplier",
+   "fieldtype": "Float",
+   "label": "Loyalty Multiplier"
+  },
+  {
+   "fieldname": "wallet_topup",
+   "fieldtype": "Currency",
+   "label": "Wallet Top-up"
+  },
+  {
+   "fieldname": "birthday_bonus_points",
+   "fieldtype": "Int",
+   "label": "Birthday Bonus Points"
+  },
+  {
+   "fieldname": "referral_bonus_points",
+   "fieldtype": "Int",
+   "label": "Referral Bonus Points"
+  },
+  {
+   "fieldname": "referral_bonus_new_customer",
+   "fieldtype": "Int",
+   "label": "Referral Bonus (New Customer)"
+  },
+  {
+   "fieldname": "discount_pct_on_products",
+   "fieldtype": "Float",
+   "label": "Discount % on Products"
+  },
+  {
+   "fieldname": "discount_pct_on_services",
+   "fieldtype": "Float",
+   "label": "Discount % on Services"
+  },
+  {
+   "fieldname": "sb_renewal",
+   "fieldtype": "Section Break",
+   "label": "Renewal"
+  },
+  {
+   "fieldname": "auto_renewal",
+   "fieldtype": "Check",
+   "label": "Auto Renewal"
+  },
+  {
+   "fieldname": "renewal_reminder_days",
+   "fieldtype": "Int",
+   "label": "Renewal Reminder Days"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "terms_and_conditions",
+   "fieldtype": "Text Editor",
+   "label": "Terms and Conditions"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-26 20:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Membership Loyalty",
+ "name": "Membership Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

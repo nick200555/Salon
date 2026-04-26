@@ -1,0 +1,304 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-04-26 20:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "session_no",
+  "naming_series",
+  "appointment",
+  "customer",
+  "customer_mobile",
+  "branch",
+  "session_date",
+  "sb_timing",
+  "session_start",
+  "session_end",
+  "primary_stylist",
+  "sb_services",
+  "services_performed",
+  "total_services",
+  "sb_media",
+  "before_photo",
+  "after_photo",
+  "sb_notes",
+  "treatment_notes",
+  "skin_type",
+  "hair_type",
+  "allergy_notes",
+  "sb_inventory",
+  "products_used",
+  "sb_checklist",
+  "treatment_checklist",
+  "checklist_completed",
+  "status",
+  "sb_quality",
+  "quality_check_by",
+  "quality_notes",
+  "sb_customer",
+  "customer_remarks",
+  "customer_signature",
+  "pos_invoice",
+  "membership_applied",
+  "discount_amount",
+  "internal_notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "session_no",
+   "fieldtype": "Data",
+   "label": "Session No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "SESS-.YYYY.-.####"
+  },
+  {
+   "fieldname": "appointment",
+   "fieldtype": "Link",
+   "label": "Appointment",
+   "options": "Salon Appointment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.mobile_no",
+   "fieldname": "customer_mobile",
+   "fieldtype": "Data",
+   "label": "Customer Mobile",
+   "read_only": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "session_date",
+   "fieldtype": "Date",
+   "label": "Session Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sb_timing",
+   "fieldtype": "Section Break",
+   "label": "Timing"
+  },
+  {
+   "fieldname": "session_start",
+   "fieldtype": "Datetime",
+   "label": "Session Start"
+  },
+  {
+   "fieldname": "session_end",
+   "fieldtype": "Datetime",
+   "label": "Session End"
+  },
+  {
+   "fieldname": "primary_stylist",
+   "fieldtype": "Link",
+   "label": "Primary Stylist",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sb_services",
+   "fieldtype": "Section Break",
+   "label": "Services Performed"
+  },
+  {
+   "fieldname": "services_performed",
+   "fieldtype": "Table",
+   "label": "Services Performed",
+   "options": "Service Item"
+  },
+  {
+   "fieldname": "total_services",
+   "fieldtype": "Int",
+   "label": "Total Services",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_media",
+   "fieldtype": "Section Break",
+   "label": "Media"
+  },
+  {
+   "fieldname": "before_photo",
+   "fieldtype": "Attach",
+   "label": "Before Photo"
+  },
+  {
+   "fieldname": "after_photo",
+   "fieldtype": "Attach",
+   "label": "After Photo"
+  },
+  {
+   "fieldname": "sb_notes",
+   "fieldtype": "Section Break",
+   "label": "Treatment Notes"
+  },
+  {
+   "fieldname": "treatment_notes",
+   "fieldtype": "Text Editor",
+   "label": "Treatment Notes"
+  },
+  {
+   "fieldname": "skin_type",
+   "fieldtype": "Select",
+   "label": "Skin Type",
+   "options": "\nNormal\nDry\nOily\nCombination\nSensitive"
+  },
+  {
+   "fieldname": "hair_type",
+   "fieldtype": "Select",
+   "label": "Hair Type",
+   "options": "\nStraight\nWavy\nCurly\nCoily\nColour-treated\nDamaged"
+  },
+  {
+   "fieldname": "allergy_notes",
+   "fieldtype": "Small Text",
+   "label": "Allergy Notes"
+  },
+  {
+   "fieldname": "sb_inventory",
+   "fieldtype": "Section Break",
+   "label": "Inventory Usage"
+  },
+  {
+   "fieldname": "products_used",
+   "fieldtype": "Table",
+   "label": "Products Used",
+   "options": "Chemical Consumption Log"
+  },
+  {
+   "fieldname": "sb_checklist",
+   "fieldtype": "Section Break",
+   "label": "Checklist"
+  },
+  {
+   "fieldname": "treatment_checklist",
+   "fieldtype": "Link",
+   "label": "Treatment Checklist",
+   "options": "Treatment Checklist"
+  },
+  {
+   "fieldname": "checklist_completed",
+   "fieldtype": "Check",
+   "label": "Checklist Completed",
+   "read_only": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nIn Progress\nQuality Check\nCompleted\nCustomer Accepted"
+  },
+  {
+   "fieldname": "sb_quality",
+   "fieldtype": "Section Break",
+   "label": "Quality Control"
+  },
+  {
+   "fieldname": "quality_check_by",
+   "fieldtype": "Link",
+   "label": "Quality Check By",
+   "options": "User"
+  },
+  {
+   "fieldname": "quality_notes",
+   "fieldtype": "Small Text",
+   "label": "Quality Notes"
+  },
+  {
+   "fieldname": "sb_customer",
+   "fieldtype": "Section Break",
+   "label": "Customer Sign-off"
+  },
+  {
+   "fieldname": "customer_remarks",
+   "fieldtype": "Small Text",
+   "label": "Customer Remarks"
+  },
+  {
+   "fieldname": "customer_signature",
+   "fieldtype": "Signature",
+   "label": "Customer Signature"
+  },
+  {
+   "fieldname": "pos_invoice",
+   "fieldtype": "Link",
+   "label": "POS Invoice",
+   "options": "POS Invoice"
+  },
+  {
+   "fieldname": "membership_applied",
+   "fieldtype": "Link",
+   "label": "Membership Applied",
+   "options": "Customer Membership"
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Currency",
+   "label": "Discount Amount"
+  },
+  {
+   "fieldname": "internal_notes",
+   "fieldtype": "Text Editor",
+   "label": "Internal Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Service Session",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-26 20:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Salon Services",
+ "name": "Service Session",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "autoname": "category_name",
+ "creation": "2026-04-26 20:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "category_name",
+  "department",
+  "default_duration_mins",
+  "buffer_mins",
+  "default_reminder_policy",
+  "auto_assign_role",
+  "requires_consultation",
+  "sb_loyalty",
+  "loyalty_points_per_visit",
+  "loyalty_points_per_currency",
+  "sb_portal",
+  "allow_portal_booking",
+  "online_prepayment_required",
+  "color_code",
+  "icon",
+  "is_active",
+  "description",
+  "photo"
+ ],
+ "fields": [
+  {
+   "fieldname": "category_name",
+   "fieldtype": "Data",
+   "label": "Category Name",
+   "unique": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Select",
+   "label": "Department",
+   "options": "Hair\nSkin\nSpa\nNails\nBridal\nWellness\nGeneral"
+  },
+  {
+   "fieldname": "default_duration_mins",
+   "fieldtype": "Int",
+   "label": "Default Duration (Mins)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "buffer_mins",
+   "fieldtype": "Int",
+   "label": "Buffer Mins"
+  },
+  {
+   "fieldname": "default_reminder_policy",
+   "fieldtype": "Link",
+   "label": "Default Reminder Policy",
+   "options": "Appointment Reminder Policy"
+  },
+  {
+   "fieldname": "auto_assign_role",
+   "fieldtype": "Link",
+   "label": "Auto Assign Role",
+   "options": "Role"
+  },
+  {
+   "fieldname": "requires_consultation",
+   "fieldtype": "Check",
+   "label": "Requires Consultation"
+  },
+  {
+   "fieldname": "sb_loyalty",
+   "fieldtype": "Section Break",
+   "label": "Loyalty Settings"
+  },
+  {
+   "fieldname": "loyalty_points_per_visit",
+   "fieldtype": "Int",
+   "label": "Loyalty Points per Visit"
+  },
+  {
+   "fieldname": "loyalty_points_per_currency",
+   "fieldtype": "Float",
+   "label": "Loyalty Points per Currency \u20b9"
+  },
+  {
+   "fieldname": "sb_portal",
+   "fieldtype": "Section Break",
+   "label": "Portal Settings"
+  },
+  {
+   "fieldname": "allow_portal_booking",
+   "fieldtype": "Check",
+   "label": "Allow Portal Booking"
+  },
+  {
+   "fieldname": "online_prepayment_required",
+   "fieldtype": "Check",
+   "label": "Online Prepayment Required"
+  },
+  {
+   "fieldname": "color_code",
+   "fieldtype": "Color",
+   "label": "Color Code"
+  },
+  {
+   "fieldname": "icon",
+   "fieldtype": "Data",
+   "label": "Icon"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-26 20:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Appointment Booking",
+ "name": "Service Category",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

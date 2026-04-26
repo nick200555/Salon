@@ -1,0 +1,376 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_guest_to_view": 0,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2026-04-26 20:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "appointment_no",
+  "naming_series",
+  "customer",
+  "customer_mobile",
+  "branch",
+  "appointment_date",
+  "appointment_time",
+  "end_time",
+  "sb_services",
+  "services",
+  "sb_assignment",
+  "primary_stylist",
+  "secondary_stylist",
+  "service_category",
+  "booking_channel",
+  "is_repeat_customer",
+  "queue_position",
+  "sb_refs",
+  "slot_ref",
+  "reminder_policy",
+  "col_reminders",
+  "reminder_sent_1",
+  "reminder_sent_2",
+  "status",
+  "sb_timestamps",
+  "check_in_time",
+  "service_start_time",
+  "service_end_time",
+  "actual_duration_mins",
+  "sb_reschedule",
+  "reschedule_count",
+  "original_appointment",
+  "cancellation_reason",
+  "no_show_reason",
+  "sb_finance",
+  "advance_paid",
+  "advance_payment_ref",
+  "pos_invoice",
+  "loyalty_points_earned",
+  "membership_used",
+  "package_session_no",
+  "sb_notes",
+  "customer_notes",
+  "internal_notes",
+  "stylist_notes",
+  "sb_feedback",
+  "feedback_collected",
+  "customer_rating",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "appointment_no",
+   "fieldtype": "Data",
+   "label": "Appointment No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "APPT-.YYYY.MM.-.####"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.mobile_no",
+   "fieldname": "customer_mobile",
+   "fieldtype": "Data",
+   "label": "Customer Mobile",
+   "read_only": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "appointment_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Appointment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "appointment_time",
+   "fieldtype": "Time",
+   "label": "Appointment Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_services",
+   "fieldtype": "Section Break",
+   "label": "Services"
+  },
+  {
+   "fieldname": "services",
+   "fieldtype": "Table",
+   "label": "Services",
+   "options": "Service Item"
+  },
+  {
+   "fieldname": "sb_assignment",
+   "fieldtype": "Section Break",
+   "label": "Assignment"
+  },
+  {
+   "fieldname": "primary_stylist",
+   "fieldtype": "Link",
+   "label": "Primary Stylist",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "secondary_stylist",
+   "fieldtype": "Link",
+   "label": "Secondary Stylist",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "service_category",
+   "fieldtype": "Link",
+   "label": "Service Category",
+   "options": "Service Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "booking_channel",
+   "fieldtype": "Select",
+   "label": "Booking Channel",
+   "options": "Walk-In\nPhone\nPortal\nWhatsApp\nInstagram\nOther"
+  },
+  {
+   "fieldname": "is_repeat_customer",
+   "fieldtype": "Check",
+   "label": "Is Repeat Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "queue_position",
+   "fieldtype": "Int",
+   "label": "Queue Position",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_refs",
+   "fieldtype": "Section Break",
+   "label": "References"
+  },
+  {
+   "fieldname": "slot_ref",
+   "fieldtype": "Link",
+   "label": "Slot Reference",
+   "options": "Booking Slot"
+  },
+  {
+   "fieldname": "reminder_policy",
+   "fieldtype": "Link",
+   "label": "Reminder Policy",
+   "options": "Appointment Reminder Policy"
+  },
+  {
+   "fieldname": "col_reminders",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reminder_sent_1",
+   "fieldtype": "Check",
+   "label": "Reminder 1 Sent",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reminder_sent_2",
+   "fieldtype": "Check",
+   "label": "Reminder 2 Sent",
+   "read_only": 1
+  },
+  {
+   "default": "Booked",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Booked\nConfirmed\nIn Service\nCompleted\nNo-Show\nCancelled\nRescheduled"
+  },
+  {
+   "fieldname": "sb_timestamps",
+   "fieldtype": "Section Break",
+   "label": "Timestamps"
+  },
+  {
+   "fieldname": "check_in_time",
+   "fieldtype": "Datetime",
+   "label": "Check-in Time"
+  },
+  {
+   "fieldname": "service_start_time",
+   "fieldtype": "Datetime",
+   "label": "Service Start Time"
+  },
+  {
+   "fieldname": "service_end_time",
+   "fieldtype": "Datetime",
+   "label": "Service End Time"
+  },
+  {
+   "fieldname": "actual_duration_mins",
+   "fieldtype": "Int",
+   "label": "Actual Duration (Mins)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_reschedule",
+   "fieldtype": "Section Break",
+   "label": "Reschedule"
+  },
+  {
+   "fieldname": "reschedule_count",
+   "fieldtype": "Int",
+   "label": "Reschedule Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "original_appointment",
+   "fieldtype": "Link",
+   "label": "Original Appointment",
+   "options": "Salon Appointment"
+  },
+  {
+   "fieldname": "cancellation_reason",
+   "fieldtype": "Small Text",
+   "label": "Cancellation Reason"
+  },
+  {
+   "fieldname": "no_show_reason",
+   "fieldtype": "Small Text",
+   "label": "No-Show Reason"
+  },
+  {
+   "fieldname": "sb_finance",
+   "fieldtype": "Section Break",
+   "label": "Finance"
+  },
+  {
+   "fieldname": "advance_paid",
+   "fieldtype": "Currency",
+   "label": "Advance Paid"
+  },
+  {
+   "fieldname": "advance_payment_ref",
+   "fieldtype": "Data",
+   "label": "Advance Payment Ref"
+  },
+  {
+   "fieldname": "pos_invoice",
+   "fieldtype": "Link",
+   "label": "POS Invoice",
+   "options": "POS Invoice"
+  },
+  {
+   "fieldname": "loyalty_points_earned",
+   "fieldtype": "Int",
+   "label": "Loyalty Points Earned",
+   "read_only": 1
+  },
+  {
+   "fieldname": "membership_used",
+   "fieldtype": "Link",
+   "label": "Membership Used",
+   "options": "Customer Membership"
+  },
+  {
+   "fieldname": "package_session_no",
+   "fieldtype": "Int",
+   "label": "Package Session No"
+  },
+  {
+   "fieldname": "sb_notes",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "customer_notes",
+   "fieldtype": "Small Text",
+   "label": "Customer Notes"
+  },
+  {
+   "fieldname": "internal_notes",
+   "fieldtype": "Text Editor",
+   "label": "Internal Notes"
+  },
+  {
+   "fieldname": "stylist_notes",
+   "fieldtype": "Text Editor",
+   "label": "Stylist Notes"
+  },
+  {
+   "fieldname": "sb_feedback",
+   "fieldtype": "Section Break",
+   "label": "Feedback"
+  },
+  {
+   "fieldname": "feedback_collected",
+   "fieldtype": "Check",
+   "label": "Feedback Collected",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_rating",
+   "fieldtype": "Rating",
+   "label": "Customer Rating"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Salon Appointment",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-26 20:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Appointment Booking",
+ "name": "Salon Appointment",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

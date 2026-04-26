@@ -1,0 +1,62 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<div class="membership-dashboard py-5">
+    <h1>{{ _("My Membership & Loyalty") }}</h1>
+    
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{ _("Loyalty Points") }}</h5>
+                    <p class="card-text h2">{{ loyalty_points_balance or 0 }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{ _("Wallet Balance") }}</h5>
+                    <p class="card-text h2">₹{{ wallet_balance or 0.00 }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-info mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{ _("Active Plan") }}</h5>
+                    <p class="card-text">{{ active_plan_name or _("None") }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <h3>{{ _("Recent Appointments") }}</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>{{ _("ID") }}</th>
+                    <th>{{ _("Date") }}</th>
+                    <th>{{ _("Service") }}</th>
+                    <th>{{ _("Status") }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for appt in appointments %}
+                <tr>
+                    <td><a href="/book/{{ appt.name }}">{{ appt.name }}</a></td>
+                    <td>{{ appt.appointment_date }}</td>
+                    <td>{{ appt.service_category }}</td>
+                    <td>{{ appt.status }}</td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="4" class="text-center">{{ _("No appointments found.") }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

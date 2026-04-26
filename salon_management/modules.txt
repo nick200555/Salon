@@ -1,0 +1,6 @@
+appointment_booking
+salon_services
+membership_loyalty
+inventory_management
+customer_portal
+reports_analytics

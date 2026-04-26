@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "autoname": "policy_name",
+ "creation": "2026-04-26 20:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "policy_name",
+  "reminder_1_hours_before",
+  "reminder_1_channel",
+  "reminder_2_hours_before",
+  "reminder_2_channel",
+  "cb_flags",
+  "send_confirmation_on_book",
+  "send_cancellation_notice",
+  "sb_templates",
+  "whatsapp_template_1",
+  "whatsapp_template_2",
+  "email_template",
+  "sms_template"
+ ],
+ "fields": [
+  {
+   "fieldname": "policy_name",
+   "fieldtype": "Data",
+   "label": "Policy Name",
+   "unique": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "reminder_1_hours_before",
+   "fieldtype": "Int",
+   "label": "Reminder 1 Hours Before",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reminder_1_channel",
+   "fieldtype": "Select",
+   "label": "Reminder 1 Channel",
+   "options": "WhatsApp\nSMS\nEmail\nAll"
+  },
+  {
+   "fieldname": "reminder_2_hours_before",
+   "fieldtype": "Int",
+   "label": "Reminder 2 Hours Before"
+  },
+  {
+   "fieldname": "reminder_2_channel",
+   "fieldtype": "Select",
+   "label": "Reminder 2 Channel",
+   "options": "WhatsApp\nSMS\nEmail\nAll"
+  },
+  {
+   "fieldname": "cb_flags",
+   "fieldtype": "Section Break",
+   "label": "Settings"
+  },
+  {
+   "fieldname": "send_confirmation_on_book",
+   "fieldtype": "Check",
+   "label": "Send Confirmation on Book"
+  },
+  {
+   "fieldname": "send_cancellation_notice",
+   "fieldtype": "Check",
+   "label": "Send Cancellation Notice"
+  },
+  {
+   "fieldname": "sb_templates",
+   "fieldtype": "Section Break",
+   "label": "Templates"
+  },
+  {
+   "fieldname": "whatsapp_template_1",
+   "fieldtype": "Data",
+   "label": "WhatsApp Template 1"
+  },
+  {
+   "fieldname": "whatsapp_template_2",
+   "fieldtype": "Data",
+   "label": "WhatsApp Template 2"
+  },
+  {
+   "fieldname": "email_template",
+   "fieldtype": "Link",
+   "label": "Email Template",
+   "options": "Email Template"
+  },
+  {
+   "fieldname": "sms_template",
+   "fieldtype": "Small Text",
+   "label": "SMS Template"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-26 20:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Appointment Booking",
+ "name": "Appointment Reminder Policy",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

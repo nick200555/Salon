@@ -1,0 +1,15 @@
+include MANIFEST.in
+include requirements.txt
+include *.md
+include *.py
+include *.txt
+recursive-include salon_management *.html
+recursive-include salon_management *.js
+recursive-include salon_management *.json
+recursive-include salon_management *.md
+recursive-include salon_management *.png
+recursive-include salon_management *.py
+recursive-include salon_management *.svg
+recursive-include salon_management *.txt
+recursive-include salon_management *.csv
+recursive-include salon_management *.css

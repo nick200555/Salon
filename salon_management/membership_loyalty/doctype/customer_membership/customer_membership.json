@@ -1,0 +1,255 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2026-04-26 20:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "membership_no",
+  "naming_series",
+  "customer",
+  "customer_mobile",
+  "branch",
+  "plan",
+  "enrollment_date",
+  "expiry_date",
+  "sb_usage",
+  "renewal_count",
+  "previous_membership",
+  "sessions_included",
+  "sessions_used",
+  "sessions_remaining",
+  "sb_balances",
+  "wallet_balance",
+  "loyalty_points_balance",
+  "total_points_earned",
+  "total_points_redeemed",
+  "sb_payment",
+  "payment_ref",
+  "payment_mode",
+  "status",
+  "sb_auto",
+  "auto_renewal_enabled",
+  "renewal_payment_token",
+  "sb_pref",
+  "customer_preferences",
+  "preferred_stylist",
+  "internal_notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "membership_no",
+   "fieldtype": "Data",
+   "label": "Membership No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "MEM-.YYYY.MM.-.####"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "customer.mobile_no",
+   "fieldname": "customer_mobile",
+   "fieldtype": "Data",
+   "label": "Customer Mobile",
+   "read_only": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "plan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Plan",
+   "options": "Membership Plan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "enrollment_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Enrollment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_usage",
+   "fieldtype": "Section Break",
+   "label": "Usage Tracking"
+  },
+  {
+   "fieldname": "renewal_count",
+   "fieldtype": "Int",
+   "label": "Renewal Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "previous_membership",
+   "fieldtype": "Link",
+   "label": "Previous Membership",
+   "options": "Customer Membership"
+  },
+  {
+   "fieldname": "sessions_included",
+   "fieldtype": "Int",
+   "label": "Sessions Included",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sessions_used",
+   "fieldtype": "Int",
+   "label": "Sessions Used",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sessions_remaining",
+   "fieldtype": "Int",
+   "label": "Sessions Remaining",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_balances",
+   "fieldtype": "Section Break",
+   "label": "Balances"
+  },
+  {
+   "fieldname": "wallet_balance",
+   "fieldtype": "Currency",
+   "label": "Wallet Balance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "loyalty_points_balance",
+   "fieldtype": "Int",
+   "label": "Loyalty Points Balance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_points_earned",
+   "fieldtype": "Int",
+   "label": "Total Points Earned",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_points_redeemed",
+   "fieldtype": "Int",
+   "label": "Total Points Redeemed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_payment",
+   "fieldtype": "Section Break",
+   "label": "Payment"
+  },
+  {
+   "fieldname": "payment_ref",
+   "fieldtype": "Data",
+   "label": "Payment Reference"
+  },
+  {
+   "fieldname": "payment_mode",
+   "fieldtype": "Select",
+   "label": "Payment Mode",
+   "options": "Cash\nCard\nUPI\nWallet\nComplimentary"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nExpired\nSuspended\nCancelled\nPending Renewal"
+  },
+  {
+   "fieldname": "sb_auto",
+   "fieldtype": "Section Break",
+   "label": "Auto Renewal"
+  },
+  {
+   "fieldname": "auto_renewal_enabled",
+   "fieldtype": "Check",
+   "label": "Auto Renewal Enabled"
+  },
+  {
+   "fieldname": "renewal_payment_token",
+   "fieldtype": "Password",
+   "label": "Renewal Payment Token"
+  },
+  {
+   "fieldname": "sb_pref",
+   "fieldtype": "Section Break",
+   "label": "Preferences"
+  },
+  {
+   "fieldname": "customer_preferences",
+   "fieldtype": "Text Editor",
+   "label": "Customer Preferences"
+  },
+  {
+   "fieldname": "preferred_stylist",
+   "fieldtype": "Link",
+   "label": "Preferred Stylist",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "internal_notes",
+   "fieldtype": "Text Editor",
+   "label": "Internal Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Customer Membership",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-04-26 20:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Membership Loyalty",
+ "name": "Customer Membership",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

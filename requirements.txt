@@ -1,0 +1,5 @@
+frappe~=15.0.0
+erpnext~=15.0.0
+python-docx
+# WhatsApp API providers often require requests
+requests

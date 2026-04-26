@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2026-04-26 20:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "feedback_no",
+  "naming_series",
+  "customer",
+  "service_session",
+  "appointment",
+  "stylist",
+  "branch",
+  "sb_ratings",
+  "overall_rating",
+  "service_quality_rating",
+  "cleanliness_rating",
+  "staff_behaviour_rating",
+  "value_for_money_rating",
+  "would_recommend",
+  "feedback_text",
+  "feedback_channel",
+  "submitted_at",
+  "reviewed_by",
+  "management_response"
+ ],
+ "fields": [
+  {
+   "fieldname": "feedback_no",
+   "fieldtype": "Data",
+   "label": "Feedback No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "FDBK-.YYYY.MM.DD.-.##"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_session",
+   "fieldtype": "Link",
+   "label": "Service Session",
+   "options": "Service Session"
+  },
+  {
+   "fieldname": "appointment",
+   "fieldtype": "Link",
+   "label": "Appointment",
+   "options": "Salon Appointment"
+  },
+  {
+   "fieldname": "stylist",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Stylist",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "sb_ratings",
+   "fieldtype": "Section Break",
+   "label": "Ratings"
+  },
+  {
+   "fieldname": "overall_rating",
+   "fieldtype": "Rating",
+   "label": "Overall Rating",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_quality_rating",
+   "fieldtype": "Rating",
+   "label": "Service Quality Rating"
+  },
+  {
+   "fieldname": "cleanliness_rating",
+   "fieldtype": "Rating",
+   "label": "Cleanliness Rating"
+  },
+  {
+   "fieldname": "staff_behaviour_rating",
+   "fieldtype": "Rating",
+   "label": "Staff Behaviour Rating"
+  },
+  {
+   "fieldname": "value_for_money_rating",
+   "fieldtype": "Rating",
+   "label": "Value for Money Rating"
+  },
+  {
+   "fieldname": "would_recommend",
+   "fieldtype": "Select",
+   "label": "Would Recommend",
+   "options": "Definitely\nProbably\nUnlikely\nDefinitely Not"
+  },
+  {
+   "fieldname": "feedback_text",
+   "fieldtype": "Text",
+   "label": "Feedback Text"
+  },
+  {
+   "fieldname": "feedback_channel",
+   "fieldtype": "Select",
+   "label": "Feedback Channel",
+   "options": "Portal\nWhatsApp\nIn-Person\nEmail"
+  },
+  {
+   "fieldname": "submitted_at",
+   "fieldtype": "Datetime",
+   "label": "Submitted At"
+  },
+  {
+   "fieldname": "reviewed_by",
+   "fieldtype": "Link",
+   "label": "Reviewed By",
+   "options": "User"
+  },
+  {
+   "fieldname": "management_response",
+   "fieldtype": "Small Text",
+   "label": "Management Response"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-26 20:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Customer Portal",
+ "name": "Customer Feedback",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

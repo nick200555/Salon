@@ -1,0 +1,35 @@
+[
+ {
+  "dt": "Customer",
+  "fieldname": "preferred_stylist",
+  "fieldtype": "Link",
+  "label": "Preferred Stylist",
+  "options": "Employee"
+ },
+ {
+  "dt": "Customer",
+  "fieldname": "membership_status",
+  "fieldtype": "Data",
+  "label": "Membership Status",
+  "read_only": 1
+ },
+ {
+  "dt": "Customer",
+  "fieldname": "loyalty_points_balance",
+  "fieldtype": "Int",
+  "label": "Loyalty Points Balance",
+  "read_only": 1
+ },
+ {
+  "dt": "Item",
+  "fieldname": "is_salon_service",
+  "fieldtype": "Check",
+  "label": "Is Salon Service"
+ },
+ {
+  "dt": "Item",
+  "fieldname": "default_duration_mins",
+  "fieldtype": "Int",
+  "label": "Default Duration (Mins)"
+ }
+]

@@ -1,0 +1,55 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<div class="salon-portal-container">
+    <header class="portal-header text-center py-5">
+        <h1>{{ _("Book Your Salon Experience") }}</h1>
+        <p>{{ _("Choose your branch and service to get started") }}</p>
+    </header>
+
+    <div class="booking-wizard card shadow-sm p-4">
+        <form id="booking-form">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">{{ _("Select Branch") }}</label>
+                    <select name="branch" class="form-select" required>
+                        <!-- Branch options will be loaded here -->
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">{{ _("Select Service") }}</label>
+                    <select name="service_category" class="form-select" required>
+                        <!-- Category options will be loaded here -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">{{ _("Select Date") }}</label>
+                    <input type="date" name="appointment_date" class="form-control" required min="{{ frappe.utils.today() }}">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">{{ _("Available Time Slots") }}</label>
+                    <select name="appointment_time" class="form-select" required>
+                        <option value="">{{ _("Select a time") }}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">{{ _("Notes / Special Instructions") }}</label>
+                <textarea name="notes" class="form-control" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">{{ _("Confirm Booking") }}</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.querySelector('input[name="appointment_date"]').addEventListener('change', function() {
+        // Fetch slots via API
+    });
+</script>
+{% endblock %}

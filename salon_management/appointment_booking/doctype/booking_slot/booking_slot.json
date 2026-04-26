@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "autoname": "format:{branch}-{day_of_week}-{slot_start}",
+ "creation": "2026-04-26 20:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "branch",
+  "day_of_week",
+  "slot_start",
+  "slot_end",
+  "max_concurrent",
+  "is_active",
+  "is_blocked",
+  "block_reason"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "day_of_week",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Day of Week",
+   "options": "Monday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\nSunday",
+   "reqd": 1
+  },
+  {
+   "fieldname": "slot_start",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Slot Start",
+   "reqd": 1
+  },
+  {
+   "fieldname": "slot_end",
+   "fieldtype": "Time",
+   "label": "Slot End",
+   "reqd": 1
+  },
+  {
+   "fieldname": "max_concurrent",
+   "fieldtype": "Int",
+   "label": "Max Concurrent",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "is_blocked",
+   "fieldtype": "Check",
+   "label": "Is Blocked"
+  },
+  {
+   "fieldname": "block_reason",
+   "fieldtype": "Small Text",
+   "label": "Block Reason"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-04-26 20:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Appointment Booking",
+ "name": "Booking Slot",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
