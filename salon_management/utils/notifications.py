@@ -7,8 +7,10 @@ def send_booking_confirmation(doc, method=None):
     if not customer_mobile:
         return
         
-    message = _("Hi {0}, your appointment {1} at {2} on {3} is booked.").format(
-        doc.customer, doc.name, doc.branch, doc.appointment_date
+    message = _("Hi {0}, your appointment {1} at {2} on {3} at {4} is booked.").format(
+        doc.customer, doc.name, doc.branch, 
+        frappe.utils.format_date(doc.appointment_date),
+        frappe.utils.format_time(doc.appointment_time)
     )
     
     log_notification(doc.customer, "Appointment Confirmed", "WhatsApp", doc.name, message)
