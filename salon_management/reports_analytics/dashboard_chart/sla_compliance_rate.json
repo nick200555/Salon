@@ -1,0 +1,22 @@
+{
+ "chart_name": "SLA Compliance Rate",
+ "chart_type": "Report",
+ "creation": "2026-04-26 20:00:00.000000",
+ "doctype": "Dashboard Chart",
+ "document_type": "Salon Appointment",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "is_public": 1,
+ "is_standard": 1,
+ "modified": "2026-04-26 20:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Reports Analytics",
+ "name": "SLA Compliance Rate",
+ "owner": "Administrator",
+ "report_name": "Daily Appointment Report",
+ "source": "",
+ "timeseries": 0,
+ "type": "Line",
+ "width": "Half",
+ "y_axis": []
+}
