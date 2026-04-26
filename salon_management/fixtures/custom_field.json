@@ -1,5 +1,6 @@
 [
  {
+  "doctype": "Custom Field",
   "dt": "Customer",
   "fieldname": "preferred_stylist",
   "fieldtype": "Link",
@@ -7,6 +8,7 @@
   "options": "Employee"
  },
  {
+  "doctype": "Custom Field",
   "dt": "Customer",
   "fieldname": "membership_status",
   "fieldtype": "Data",
@@ -14,6 +16,7 @@
   "read_only": 1
  },
  {
+  "doctype": "Custom Field",
   "dt": "Customer",
   "fieldname": "loyalty_points_balance",
   "fieldtype": "Int",
@@ -21,12 +24,14 @@
   "read_only": 1
  },
  {
+  "doctype": "Custom Field",
   "dt": "Item",
   "fieldname": "is_salon_service",
   "fieldtype": "Check",
   "label": "Is Salon Service"
  },
  {
+  "doctype": "Custom Field",
   "dt": "Item",
   "fieldname": "default_duration_mins",
   "fieldtype": "Int",
