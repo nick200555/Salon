@@ -1,0 +1,10 @@
+[
+ {"doctype": "Role", "name": "Salon Manager", "role_name": "Salon Manager"},
+ {"doctype": "Role", "name": "Branch Manager", "role_name": "Branch Manager"},
+ {"doctype": "Role", "name": "Receptionist", "role_name": "Receptionist"},
+ {"doctype": "Role", "name": "Stylist", "role_name": "Stylist"},
+ {"doctype": "Role", "name": "Spa Therapist", "role_name": "Spa Therapist"},
+ {"doctype": "Role", "name": "Inventory Manager", "role_name": "Inventory Manager"},
+ {"doctype": "Role", "name": "Accountant", "role_name": "Accountant"},
+ {"doctype": "Role", "name": "Customer", "role_name": "Customer"}
+]

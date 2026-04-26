@@ -1,6 +1,7 @@
 [
  {
   "doctype": "Custom Field",
+  "name": "Customer-preferred_stylist",
   "dt": "Customer",
   "fieldname": "preferred_stylist",
   "fieldtype": "Link",
@@ -9,6 +10,7 @@
  },
  {
   "doctype": "Custom Field",
+  "name": "Customer-membership_status",
   "dt": "Customer",
   "fieldname": "membership_status",
   "fieldtype": "Data",
@@ -17,6 +19,7 @@
  },
  {
   "doctype": "Custom Field",
+  "name": "Customer-loyalty_points_balance",
   "dt": "Customer",
   "fieldname": "loyalty_points_balance",
   "fieldtype": "Int",
@@ -25,6 +28,7 @@
  },
  {
   "doctype": "Custom Field",
+  "name": "Item-is_salon_service",
   "dt": "Item",
   "fieldname": "is_salon_service",
   "fieldtype": "Check",
@@ -32,6 +36,7 @@
  },
  {
   "doctype": "Custom Field",
+  "name": "Item-default_duration_mins",
   "dt": "Item",
   "fieldname": "default_duration_mins",
   "fieldtype": "Int",
