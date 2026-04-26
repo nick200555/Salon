@@ -110,7 +110,7 @@ website_route_rules = [
 
 # Notifications
 # ------------------
-notification_config = "salon_management.salon_management.notification_config"
+# notification_config = "salon_management.salon_management.notification_config"
 
 # Overrides
 # ------------------
