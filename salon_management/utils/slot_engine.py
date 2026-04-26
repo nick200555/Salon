@@ -1,16 +1,19 @@
 import frappe
-from frappe.utils import now_datetime, get_time, add_to_date
+from frappe.utils import now_datetime, get_time, add_to_date, getdate
 
 def reserve_booking_slot(doc, method=None):
     """Reserve a Booking Slot on Salon Appointment creation."""
     if not doc.appointment_date or not doc.appointment_time:
         return
 
+    # Ensure appointment_date is a date object
+    appt_date = getdate(doc.appointment_date)
+
     # Check for existing slot in booking slot master
     slots = frappe.get_list('Booking Slot',
         filters={
             'branch': doc.branch,
-            'day_of_week': doc.appointment_date.strftime('%A'),
+            'day_of_week': appt_date.strftime('%A'),
             'slot_start': doc.appointment_time,
             'is_active': 1,
             'is_blocked': 0
@@ -22,7 +25,7 @@ def reserve_booking_slot(doc, method=None):
     
     # Check current occupancy
     booked = frappe.db.count('Salon Appointment', {
-        'appointment_date': doc.appointment_date,
+        'appointment_date': appt_date,
         'appointment_time': doc.appointment_time,
         'branch': doc.branch,
         'status': ['not in', ['Cancelled', 'No-Show']]
