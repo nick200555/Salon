@@ -83,7 +83,7 @@
    "fieldname": "allowed_categories",
    "fieldtype": "Table MultiSelect",
    "label": "Allowed Categories",
-   "options": "Service Category"
+   "options": "CP Allowed Category"
   },
   {
    "fieldname": "sb_visibility",
