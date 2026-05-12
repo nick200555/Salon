@@ -4,4 +4,4 @@ membership_loyalty
 inventory_management
 customer_portal
 reports_analytics
-salon
+Salon
