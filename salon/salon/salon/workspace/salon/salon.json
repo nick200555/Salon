@@ -1,0 +1,485 @@
+{
+ "charts": [
+  {
+   "chart_name": "Daily Appointments",
+   "label": "Daily Appointments"
+  },
+  {
+   "chart_name": "Revenue Trend",
+   "label": "Revenue Trend"
+  },
+  {
+   "chart_name": "Top Services",
+   "label": "Top Services"
+  },
+  {
+   "chart_name": "Staff Utilization",
+   "label": "Staff Utilization"
+  },
+  {
+   "chart_name": "Product Consumption",
+   "label": "Product Consumption"
+  },
+  {
+   "chart_name": "Membership Growth",
+   "label": "Membership Growth"
+  }
+ ],
+ "content": "[{\"id\": \"cb-appointments\", \"type\": \"card\", \"data\": {\"card_name\": \"Appointments & Scheduling\", \"col\": 12}}, {\"id\": \"cb-customers\", \"type\": \"card\", \"data\": {\"card_name\": \"Customers & Memberships\", \"col\": 12}}, {\"id\": \"cb-services\", \"type\": \"card\", \"data\": {\"card_name\": \"Services & Staff\", \"col\": 12}}, {\"id\": \"cb-billing\", \"type\": \"card\", \"data\": {\"card_name\": \"Billing & POS\", \"col\": 12}}, {\"id\": \"cb-inventory\", \"type\": \"card\", \"data\": {\"card_name\": \"Inventory & Procurement\", \"col\": 12}}, {\"id\": \"cb-masters\", \"type\": \"card\", \"data\": {\"card_name\": \"Masters & Setup\", \"col\": 12}}, {\"id\": \"cb-reports\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports & Analytics\", \"col\": 12}}]",
+ "creation": "2024-01-01 00:00:00.000000",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "beauty",
+ "idx": 0,
+ "is_default": 0,
+ "is_hidden": 0,
+ "label": "Salon",
+ "links": [
+  {
+   "hidden": 0,
+   "idx": 1,
+   "is_query_report": 0,
+   "label": "Appointments & Scheduling",
+   "link_count": 0,
+   "onboard": 1,
+   "title": "Appointments & Scheduling",
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 2,
+   "is_query_report": 0,
+   "label": "Appointment",
+   "link_count": 0,
+   "link_to": "Salon Appointment",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 3,
+   "is_query_report": 0,
+   "label": "Shift Schedule",
+   "link_count": 0,
+   "link_to": "Salon Shift Management",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "idx": 4,
+   "is_query_report": 0,
+   "label": "Customers & Memberships",
+   "link_count": 0,
+   "onboard": 1,
+   "title": "Customers & Memberships",
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 5,
+   "is_query_report": 0,
+   "label": "Salon Customer",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 6,
+   "is_query_report": 0,
+   "label": "Salon Membership",
+   "link_count": 0,
+   "link_to": "Customer Membership",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 7,
+   "is_query_report": 0,
+   "label": "Loyalty Program",
+   "link_count": 0,
+   "link_to": "Loyalty Program",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 8,
+   "is_query_report": 0,
+   "label": "Feedback",
+   "link_count": 0,
+   "link_to": "Customer Feedback",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "idx": 9,
+   "is_query_report": 0,
+   "label": "Services & Staff",
+   "link_count": 0,
+   "onboard": 0,
+   "title": "Services & Staff",
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 10,
+   "is_query_report": 0,
+   "label": "Stylist",
+   "link_count": 0,
+   "link_to": "Stylist Assignment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 11,
+   "is_query_report": 0,
+   "label": "Salon Employee",
+   "link_count": 0,
+   "link_to": "Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 12,
+   "is_query_report": 0,
+   "label": "Service",
+   "link_count": 0,
+   "link_to": "Service Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 13,
+   "is_query_report": 0,
+   "label": "Service Package",
+   "link_count": 0,
+   "link_to": "Membership Plan",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "idx": 14,
+   "is_query_report": 0,
+   "label": "Billing & POS",
+   "link_count": 0,
+   "onboard": 0,
+   "title": "Billing & POS",
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 15,
+   "is_query_report": 0,
+   "label": "POS Invoice",
+   "link_count": 0,
+   "link_to": "POS Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 16,
+   "is_query_report": 0,
+   "label": "Payment Entry",
+   "link_count": 0,
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "idx": 17,
+   "is_query_report": 0,
+   "label": "Inventory & Procurement",
+   "link_count": 0,
+   "onboard": 0,
+   "title": "Inventory & Procurement",
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 18,
+   "is_query_report": 0,
+   "label": "Product",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 19,
+   "is_query_report": 0,
+   "label": "Product Category",
+   "link_count": 0,
+   "link_to": "Item Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 20,
+   "is_query_report": 0,
+   "label": "Supplier",
+   "link_count": 0,
+   "link_to": "Supplier",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 21,
+   "is_query_report": 0,
+   "label": "Stock Entry",
+   "link_count": 0,
+   "link_to": "Stock Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "idx": 22,
+   "is_query_report": 0,
+   "label": "Masters & Setup",
+   "link_count": 0,
+   "onboard": 0,
+   "title": "Masters & Setup",
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 23,
+   "is_query_report": 0,
+   "label": "Salon Branch",
+   "link_count": 0,
+   "link_to": "Branch",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 24,
+   "is_query_report": 0,
+   "label": "Salon Chair",
+   "link_count": 0,
+   "link_to": "Salon Chair",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "idx": 25,
+   "is_query_report": 0,
+   "label": "Reports & Analytics",
+   "link_count": 0,
+   "onboard": 0,
+   "title": "Reports & Analytics",
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 26,
+   "is_query_report": 1,
+   "label": "Daily Appointment Report",
+   "link_count": 0,
+   "link_to": "Daily Appointment Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 27,
+   "is_query_report": 1,
+   "label": "Revenue Analysis Report",
+   "link_count": 0,
+   "link_to": "Revenue by Service",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 28,
+   "is_query_report": 1,
+   "label": "Staff Performance Report",
+   "link_count": 0,
+   "link_to": "Stylist Productivity",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 29,
+   "is_query_report": 1,
+   "label": "Service Popularity Report",
+   "link_count": 0,
+   "link_to": "Service Popularity Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 30,
+   "is_query_report": 1,
+   "label": "Inventory Consumption Report",
+   "link_count": 0,
+   "link_to": "Inventory Consumption Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 31,
+   "is_query_report": 1,
+   "label": "Customer Retention Report",
+   "link_count": 0,
+   "link_to": "Customer Retention Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 32,
+   "is_query_report": 1,
+   "label": "Membership Analytics Report",
+   "link_count": 0,
+   "link_to": "Membership Analytics Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "idx": 33,
+   "is_query_report": 1,
+   "label": "Branch Revenue Report",
+   "link_count": 0,
+   "link_to": "Branch Revenue Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Salon",
+ "name": "Salon",
+ "owner": "Administrator",
+ "public": 1,
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "format": "{} Today's",
+   "label": "Appointment",
+   "link_to": "Salon Appointment",
+   "stats_filter": "{\"appointment_date\": [\"=\", \"Today\"]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "format": "{} Active",
+   "label": "Salon Membership",
+   "link_to": "Customer Membership",
+   "stats_filter": "{\"status\": \"Active\"}",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "format": "{} Unpaid",
+   "label": "POS Invoice",
+   "link_to": "POS Invoice",
+   "stats_filter": "{\"status\": \"Unpaid\"}",
+   "type": "DocType"
+  },
+  {
+   "color": "Purple",
+   "label": "Product",
+   "link_to": "Item",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "label": "Stylist",
+   "link_to": "Stylist Assignment",
+   "type": "DocType"
+  },
+  {
+   "color": "Teal",
+   "label": "Service",
+   "link_to": "Service Item",
+   "type": "DocType"
+  },
+  {
+   "color": "Gray",
+   "label": "Feedback",
+   "link_to": "Customer Feedback",
+   "type": "DocType"
+  }
+ ],
+ "title": "Salon"
+}

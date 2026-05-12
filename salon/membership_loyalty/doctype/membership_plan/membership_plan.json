@@ -67,6 +67,7 @@
    "options": "Plan Service Inclusion"
   },
   {
+
    "fieldname": "service_limit",
    "fieldtype": "Int",
    "label": "Service Limit (0 = Unlimited)"

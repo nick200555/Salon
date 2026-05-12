@@ -31,7 +31,7 @@ frappe.ui.form.on('Salon Appointment', {
     },
     get_available_slots: function(frm) {
         frappe.call({
-            method: 'salon_management.utils.slot_engine.get_open_slots',
+            method: 'salon.utils.slot_engine.get_open_slots',
             args: {
                 branch: frm.doc.branch,
                 service_category: frm.doc.service_category,

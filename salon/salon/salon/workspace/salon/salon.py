@@ -6,7 +6,7 @@ def get_data():
 
 def get_onboarding_data():
 	return {
-		"title": _("Welcome to Salon Management"),
+		"title": _("Welcome to Salon"),
 		"subtitle": _("Complete these steps to setup your salon."),
 		"success_message": _("You are all set to manage your salon!"),
 		"docs_url": "",

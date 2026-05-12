@@ -49,5 +49,5 @@ def get_membership_status():
 @frappe.whitelist(allow_guest=False)
 def get_available_slots(branch, service_category, appointment_date):
     """Return available time slots."""
-    from salon_management.utils.slot_engine import get_open_slots
+    from salon.utils.slot_engine import get_open_slots
     return get_open_slots(branch, service_category, appointment_date)

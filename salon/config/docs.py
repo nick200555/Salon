@@ -1,7 +1,7 @@
 # Documentation configuration
 
-source_path = "salon_management"
-app_name = "salon_management"
+source_path = "salon"
+app_name = "salon"
 app_title = "Salon Management"
 app_publisher = "Your Company Name"
 app_description = "Salon Management System built on Frappe"
